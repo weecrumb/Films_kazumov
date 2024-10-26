@@ -55,6 +55,17 @@ namespace Films_kazumov.Models
             }
         }
 
+        private string genre;
+        public string Genre
+        {
+            get { return genre; }
+            set
+            {
+                genre = value;
+                OnPropertyChanged("Genre");
+            }
+        }
+
         [Schema.NotMapped]
         public bool isEnable;
         [Schema.NotMapped]
