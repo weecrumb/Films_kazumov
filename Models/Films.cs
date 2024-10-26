@@ -55,7 +55,7 @@ namespace Films_kazumov.Models
             }
         }
 
-        private string genre;
+        public string genre;
         public string Genre
         {
             get { return genre; }

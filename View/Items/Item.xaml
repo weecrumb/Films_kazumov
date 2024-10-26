@@ -57,15 +57,11 @@
                     <DropShadowEffect Opacity="0.1"/>
                 </Grid.Effect>
                 <Label Content="Жанр:" VerticalAlignment="Top" Margin="10, 0, 10, 0"/>
+                
                 <TextBox Text="{Binding Genre}" IsEnabled="{Binding IsEnable}" VerticalContentAlignment="Center" Margin="10, 25, 10, 0" VerticalAlignment="Top" Height="25"/>
             </Grid>
 
-            <Button Style="{StaticResource Update}" Command="{Binding OnEdit}" Content="{Binding IsEnableText}" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,10,0" Grid.Column="1">
-                <Button.Effect>
-                    <DropShadowEffect Opacity="0.5" BlurRadius="3" ShadowDepth="3"></DropShadowEffect>
-                </Button.Effect>
-            </Button>
-            <Button Style="{StaticResource Update}" IsEnabled="{Binding IsEnable}" Content="{Binding IsDoneText}" Command="{Binding OnDone}" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,85,10" Grid.Column="1">
+            <Button Style="{StaticResource Update}" Command="{Binding OnEdit}" Content="{Binding IsEnableText}" Height="25" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,145,70,0" Grid.Column="1">
                 <Button.Effect>
                     <DropShadowEffect Opacity="0.5" BlurRadius="3" ShadowDepth="3"></DropShadowEffect>
                 </Button.Effect>
